@@ -313,11 +313,97 @@ header{
 
 .conhecimento-img-wrapper{
     grid-column: 7/11;
-    grid-row: 3/6;
+    grid-row: 2/6;
     width: 100%;
 }
 
 .conhecimento-img-wrapper img{
     object-fit: cover;
     width: 100%;
+}
+
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 18rem;
+    height: 25rem;
+    position: relative;
+}
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: .5rem;
+}
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .8;
+    transition: opacity .3s;
+}
+
+.card:hover .card-img-wrapper img{
+    opacity: .5;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.card-info h2{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    color: #eee;
+}
+
+.card-info h3{
+    font-family: var(--font-secundary);
+    font-weight: bold;
+    color: #ff4081;
+    margin-bottom: 1.5rem;
+}
+
+.card-info p{
+    font-family: var(--font-secundary);
+    color: #eee;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+    font-family: var(--font-action);
+    color: #fff;
+    background: #7F00FF;
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to left, #E100FF, #7F00FF);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
 }
