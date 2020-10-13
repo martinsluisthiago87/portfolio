@@ -130,7 +130,7 @@
                         <h2>ToDo List</h2>
                         <h3>Javascript</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus quibusdam? Sunt tempore ad, unde error beatae nam distinctio eveniet ipsam delectus id qui assumenda eius debitis doloremque aspernatur sapiente!</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -141,7 +141,7 @@
                         <h2>Maratona</h2>
                         <h3>HTML, CSS</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illum ducimus pariatur, impedit velit perspiciatis cupiditate doloremque provident quos excepturi fuga delectus explicabo! Pariatur, deleniti laboriosam! Provident sit suscipit quis.</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -152,7 +152,7 @@
                         <h2>Casa Bela</h2>
                         <h3>HTML</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati vel fugiat tempora consectetur ipsam voluptas at dolor voluptatibus animi, ad dolores natus praesentium ut doloribus quisquam accusantium sapiente odit quod!</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
             </div>
@@ -178,6 +178,33 @@
                         <button type="submit" class="btn btn-submit">Enviar</button>
                     </form>
                 </div>
+            </div>
+        </section>
+
+        <section class="sessao-orcamento" id="orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="qtde">Qtde de Páginas</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label for="">Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">R$ 0,00</label>
+                    <button class="btn btn-orcamento">Enviar</button>
+                </form>
             </div>
         </section>
     </div>
